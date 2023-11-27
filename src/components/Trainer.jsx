@@ -1,11 +1,15 @@
 // Component names MUST be capitalised
-function Trainer() {
+function Trainer(props) {
     // components return html
+    console.log("Props:", props);
+    console.log("Name:", props.name);
+    console.log("Age:", props.age);
+    console.log("Specialism:", props.specialism);
     return (
         <div>
-            <p>Name: Jordan H</p>
-            <p>Age: 29</p>
-            <p>Specialism: Software</p>
+            <p>Name: {props.name}</p>
+            <p>Age: {props.age}</p>
+            <p>Specialism: {props.specialism}</p>
         </div>
     );
 }
