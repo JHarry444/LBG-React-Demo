@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 function King(props) {
     return (<div>
         <h4>{props.name}</h4>
-        <p>Country: {props.city}</p>
+        <p>Country: {props.country}</p>
         <p>House: {props.house}</p>
         <p>Years: {props.years}</p>
     </div>);
