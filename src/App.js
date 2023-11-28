@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Trainer from './components/Trainer';
@@ -21,7 +20,7 @@ function App() {
     console.log("trainer:", trainer);
     // add a blank trainer into the array
     trainerComponents.push(
-      <Trainer name={trainer.name} age={trainer.age} specialism={trainer.specialism} />
+      <Trainer key={trainer.name + " " + trainer.specialism} name={trainer.name} age={trainer.age} specialism={trainer.specialism} />
     );
     // Don't necessarily need to have a component in a separate file, can just write out all the html inside the loop
     // trainerComponents.push(
@@ -40,6 +39,7 @@ function App() {
       <h1>React App</h1>
       <p>hello</p>
       <p>world</p>
+      <Trainer age={30} specialism="sdet" />
       {trainerComponents}
     </div>
   );
