@@ -3,5 +3,15 @@
         "name": "Jordan",
         "age": 29,
         "specialism": "software"
+    },
+    {
+        "name": "Elliot",
+        "age": 27,
+        "specialism": "software"    
+    },
+    {
+        "name": "Andrew",
+        "age": 21,
+        "specialism": "software"    
     }
 ]

@@ -1,11 +1,6 @@
 // Component names MUST be capitalised
 function Trainer(props) {
     // components return html
-    // Logs for visibility NOT REQUIRED
-    console.log("Props:", props);
-    console.log("Name:", props.name);
-    console.log("Age:", props.age);
-    console.log("Specialism:", props.specialism);
     return (
         <div>
             <p>Name: {props.name}</p>
