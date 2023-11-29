@@ -1,3 +1,4 @@
+import Counter from './components/state/Counter';
 import MyButton from './components/state/MyButton';
 import QuickExercise from './components/state/QuickEx';
 import KingSolution from './components/static_data/KingSolution';
@@ -10,6 +11,8 @@ function App() {
   return (
     <div>
       <QuickExercise />
+      <br/>
+      <Counter/>
     </div>
   );
 }
