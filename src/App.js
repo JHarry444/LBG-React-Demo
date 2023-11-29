@@ -1,3 +1,4 @@
+import MyButton from './components/state/MyButton';
 import KingSolution from './components/static_data/KingSolution';
 import Trainers from './components/static_data/Trainers';
 
@@ -7,8 +8,7 @@ function App() {
 
   return (
     <div>
-        <Trainers/>
-        <KingSolution/>
+      <MyButton/>
     </div>
   );
 }
