@@ -15,7 +15,11 @@ function Counter() {
     return (<div>
         <input type="number" readOnly value={count} />
         <br />
+        <button onClick={() => setCount(count - 5)}>-5</button>
+        <button onClick={() => setCount(count - 1)}>-1</button>
+        <button onClick={() => setCount(0)}>R</button>
         <button onClick={() => setCount(count + 1)}>+1</button>
+        <button onClick={() => setCount(count + 5)}>+5</button>
     </div>);
 }
 
