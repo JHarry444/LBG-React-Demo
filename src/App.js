@@ -32,7 +32,7 @@ function App() {
                   <Link class="nav-link" to="/data">Data</Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" to="/requets">Requests</Link>
+                  <Link class="nav-link" to="/requests">Requests</Link>
                 </li>
               </ul>
             </div>
