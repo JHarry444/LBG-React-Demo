@@ -12,14 +12,30 @@ function Counter() {
 
     console.log("Count:", count);
 
-    return (<div>
-        <input type="number" readOnly value={count} />
-        <br />
-        <button onClick={() => setCount(count - 5)}>-5</button>
-        <button onClick={() => setCount(count - 1)}>-1</button>
-        <button onClick={() => setCount(0)}>R</button>
-        <button onClick={() => setCount(count + 1)}>+1</button>
-        <button onClick={() => setCount(count + 5)}>+5</button>
+    return (<div className="container" style={{ maxWidth: "350px" }}>
+        <div className="row">
+            <h2>Counter</h2>
+        </div>
+        <div className="row">
+            <input className="form-control" type="number" readOnly value={count} />
+        </div>
+        <div className="row mt-1">
+            <div className="col">
+                <button className="btn btn-primary" onClick={() => setCount(count - 5)}>-5</button>
+            </div>
+            <div className="col">
+                <button className="btn btn-primary" onClick={() => setCount(count - 1)}>-1</button>
+            </div>
+            <div className="col">
+                <button className="btn btn-primary" onClick={() => setCount(0)}>R</button>
+            </div>
+            <div className="col">
+                <button className="btn btn-primary" onClick={() => setCount(count + 1)}>+1</button>
+            </div>
+            <div className="col">
+                <button className="btn btn-primary" onClick={() => setCount(count + 5)}>+5</button>
+            </div>
+        </div>
     </div>);
 }
 

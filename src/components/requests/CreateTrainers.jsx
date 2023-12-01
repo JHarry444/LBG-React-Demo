@@ -7,7 +7,6 @@ function CreateTrainers() {
     const [specialism, setSpecialism] = useState("");
 
     function handleSubmit(event) {
-        debugger;
         event.preventDefault();
         axios.post("http://localhost:5000/trainer", { name, age, specialism })
             .then(response => console.log(response))

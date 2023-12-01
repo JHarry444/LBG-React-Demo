@@ -13,7 +13,7 @@ function GetTrainers() {
             .get("http://localhost:5000/trainer")
             .then(response => {
                 console.log("Response:", response);
-                // updates the traienrs state with the data from the response
+                // updates the trainers state with the data from the response
                 setTrainers(response.data);
                 console.log("Trainers:", trainers);
             }).catch(err => console.error(err));
