@@ -5,6 +5,8 @@ import Home from './components/routing/Home';
 import Counter from './components/state/Counter';
 import KingSolution from './components/static_data/KingSolution';
 import TrainerRequests from './components/requests/TrainerRequests';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // react component called App
 function App() {
 
@@ -12,12 +14,12 @@ function App() {
   return (
     <>
       <Router>
-        <nav>
-          <Link to='/'>HOME</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/state'>State</Link>
-          <Link to='/data'>Data</Link>
-          <Link to='/requests'>Requests</Link>
+        <nav className='navbar'>
+          <Link className='nav-link' to='/'>HOME</Link>
+          <Link className='nav-link' to='/about'>About</Link>
+          <Link className='nav-link' to='/state'>State</Link>
+          <Link className='nav-link' to='/data'>Data</Link>
+          <Link className='nav-link' to='/requests'>Requests</Link>
         </nav>
         <Routes>
           <Route path='/' element={<Home />} />

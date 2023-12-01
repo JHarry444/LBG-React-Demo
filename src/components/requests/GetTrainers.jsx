@@ -28,10 +28,14 @@ function GetTrainers() {
         }
     }
 
-    return (<div>
+    return (<div style={{ textAlign: "center" }}>
         <h2>Trainers</h2>
         <input type="text" value={filter} onChange={e => setFilter(e.target.value)} />
-        {trainerComponents}
+        <div className="container mt-2">
+            <div className="row row-cols-3 g-4">
+                {trainerComponents}
+            </div>
+        </div>
     </div>);
 }
 

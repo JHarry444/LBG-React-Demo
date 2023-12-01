@@ -9,22 +9,24 @@ function CreateTrainers() {
     function handleSubmit(event) {
         debugger;
         event.preventDefault();
-        axios.post("http://localhost:5000/trainer", {name, age, specialism}) 
-        .then(response => console.log(response))
-        .catch(err => console.error(err))
+        axios.post("http://localhost:5000/trainer", { name, age, specialism })
+            .then(response => console.log(response))
+            .catch(err => console.error(err))
     }
 
     return (<form onSubmit={handleSubmit}>
-        <label>Name
+        <label className="form-label">Name
             <input
+                className="form-control"
                 type="text"
                 value={name}
                 onChange={e => setName(e.target.value)}
             />
         </label>
         <br />
-        <label>Age
+        <label className="form-label">Age
             <input
+                className="form-control"
                 type="number"
                 value={age}
                 min={18}
@@ -33,15 +35,16 @@ function CreateTrainers() {
             />
         </label>
         <br />
-        <label>Specialism
+        <label className="form-label">Specialism
             <input
+                className="form-control"
                 type="text"
                 value={specialism}
                 onChange={e => setSpecialism(e.target.value)}
             />
         </label>
         <br />
-        <button type="submit">Submit</button>
+        <button className="btn btn-primary" type="submit">Submit</button>
     </form>);
 }
 
