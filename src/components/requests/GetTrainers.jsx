@@ -28,9 +28,9 @@ function GetTrainers() {
         }
     }
 
-    return (<div style={{ textAlign: "center" }}>
-        <h2>Trainers</h2>
-        <input type="text" value={filter} onChange={e => setFilter(e.target.value)} />
+    return (<div>
+        <h2 style={{ textAlign: "center" }}>Trainers</h2>
+        <input className="form-control" type="text" value={filter} onChange={e => setFilter(e.target.value)} placeholder="Enter search term here..." />
         <div className="container mt-2">
             <div className="row row-cols-3 g-4">
                 {trainerComponents}

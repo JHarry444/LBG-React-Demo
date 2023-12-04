@@ -30,11 +30,17 @@ function KingSolution() {
         setFilter(event.target.value);
     }
 
-    return (<div>
-        <h2> Kings </h2>
-        <input type="text" placeholder="Enter filter here" value={filter} onChange={handleChange} />
-        {/* <input type="text" placeholder="Enter filter here" value={filter} onChange={e => setFilter(e.target.value)} /> */}
-        {kingComponents}
+    return (<div className="container">
+        <div className="row" style={{textAlign: "center"}}>
+            <h2> Kings </h2>
+        </div>
+        <div className="row">
+            <input className="form-control" type="text" placeholder="Enter filter here" value={filter} onChange={handleChange} />
+            {/* <input type="text" placeholder="Enter filter here" value={filter} onChange={e => setFilter(e.target.value)} /> */}
+        </div>
+        <div className="row row-cols-4 g-4 mt-1">
+            {kingComponents}
+        </div>
     </div>
     );
 }
